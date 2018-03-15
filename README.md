@@ -32,6 +32,8 @@ You’ll start by editing this README file to learn how to edit a file in Bitbuc
 
 
 2. Connect to remote instance
+
+
 	**connect [ip:port]**
 	
 	e.g. connect 127.0.0.1:5555
@@ -40,9 +42,13 @@ You’ll start by editing this README file to learn how to edit a file in Bitbuc
 	If both instances are running on the same machine, you can skip the IP address(connect 5555).
 
 3. Send your message to remote instance.
+
+
 	**send Test_message**
 
 4. Disconnect when done.
+
+
 	**disconnect**
 
 
