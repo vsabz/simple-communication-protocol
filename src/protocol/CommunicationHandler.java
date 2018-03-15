@@ -99,7 +99,7 @@ public class CommunicationHandler extends Thread {
         // act depending on received message type
         switch (message.getType()) {
             case CONTACT_HEADER:
-                System.out.println("** Received CONTACT_HEADER message.**");
+                System.out.println("** Received CONTACT_HEADER message from " + message.getPayload() + " **");
                 isContactHeaderReceived = true;
                 isTransferComplete = true;
                 fullyReceivedText = "";
