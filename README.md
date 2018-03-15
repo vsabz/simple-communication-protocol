@@ -19,15 +19,24 @@ You’ll start by editing this README file to learn how to edit a file in Bitbuc
 
 ---
 
-## Create a file
+## After compiling everything, use following steps to communicate between instances.
 
-Next, you’ll add a new file to this repository.
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+1. Run 2 instances of this application
+	**java Main [port] [hostname of this instance] [MTU]**
+e.g. java Main 5555 test1 9
+
+2. Connect to remote instance
+	**connect [ip:port]**
+e.g. connect 127.0.0.1:5555
+If both instances are running on the same machine, you can skip the IP address(connect 5555).
+
+3. Send your message to remote instance.
+	**send Test_message**
+
+4. Disconnect when done.
+	**disconnect**
+
 
 Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
 
